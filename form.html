@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/Form.css')}}">
+    <style type="text/css">
+        label{
+            font-size: 20px;
+        }
+        #id{
+            font-size: 20px;
+            color: green;
+        }
+
+    </style>
+</head>
+<body style="background-image: url('{{ url_for('static', filename='images/.jpg') }}');">
+
+    <h1 style="background-color:rgb(255, 99, 71);">FILL REQUIREMENTS</h1>
+
+    <div class="main">
+        <form action="/predict" method="POST">
+            <label for="Gender">Gender</label><br>
+            <input type="radio" name="Gender" value="0" id="Gender"> Male
+            <!-- &nbsp;&nbsp;&nbsp; -->
+            <span style="padding-left: 40px;"></span>
+            <input type="radio" name="Gender" value="1" id="Gender"> Female
+            <br><br><br>
+            <label for="">Marital Status</label><br>
+            <input type="radio" name="Married" value="1">Married
+            <span style="padding-left: 40px;"> </span>
+            <input type="radio" name="Married" value="0">Single
+            <br><br><br>
+            <label for="">Number of Dependents</label><br>
+            <input type="radio" name="Dependents" value="1">One
+            <span style="padding-left: 15px;"> </span>
+            <input type="radio" name="Dependents" value="2">Two
+            <span style="padding-left: 15px;"> </span>
+            <input type="radio" name="Dependents" value="3">Three or Above
+            &<span style="padding-left: 15px;"> </span>
+            <input type="radio" name="Dependents" value="0">None
+            <br><br><br>
+            <label for="">Education Level</label><br>
+            <input type="radio" name="Education" value="0">Graduate or Above
+            <span style="padding-left: 40px;"> </span>
+            <input type="radio" name="Education" value="1">Not Graduate
+            <br><br><br>
+            <label for="">Self Employed</label><br>
+            <input type="radio" name="Self_Employed" value="1">Yes
+            <span style="padding-left: 40px;"> </span>
+            <input type="radio" name="Self_Employed" value="0">No
+            <br><br><br>
+            <label for="">Applicant's Monthly Income</label><br>
+            <input type="text" name="Applicant_Income" id="name">
+            <br><br>
+            <label for="">CoApplicant's Monthly Income</label><br>
+            <input type="text" name="Coapplicant_Income" id="name">
+            <br><br>
+            <label for="">Loan Amount</label><br>
+            <input type="text" name="Loan_Amount" id="name">
+            <br><br>
+            <label for="">Loan Amount Term</label><br>
+            <input type="text" name="Loan_Amount_Term" id="name">
+            <br><br>
+            <label for="">Credit History</label><br>
+            <input type="text" name="Credit_History" id="name">
+            <br><br>
+            <label for="">Area</label><br>
+            <input type="radio" name="Property_Area" value="0">Semiurban
+            <span style="padding-left: 40px;"> </span>
+            <input type="radio" name="Property_Area" value="1">Urban
+            <span style="padding-left: 40px;"> </span>
+            <input type="radio" name="Property_Area" value="2">Rural
+            <br><br>
+            <input type="Submit" value="Submit" id="sub">
+        </form>
+
+        </div>
+    </form>
+</body>
+</div>
+
+</html>

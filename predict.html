@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final result of the prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/Predict.css')}}">
+</head>
+<body style="background-image: url('{{ url_for('static', filename='images/img1.jpg') }}');">
+	<div class="main">
+    	<h1>Result</h1>
+		<br>
+		<br>
+		<br>
+    	<em><h2>{{prediction}}</h2></em>
+    	<br>
+		<br>
+		<br>
+		<br>
+		<br>
+        <button><a href="/" class="btn">HOME</a></button>
+    </div>
+</body>
+</html>
